@@ -369,7 +369,7 @@
   background:#fff; padding:1.2rem 1.5rem; box-shadow:none;
 }
 .faq-section .accordion-button:not(.collapsed){
-  background:var(--teal-soft); color:var(--teal-deep); box-shadow:none;
+  background:var(--teal-deep); color:var(--teal-soft); box-shadow:none;
 }
 .faq-section .accordion-button:focus{ box-shadow:0 0 0 .2rem rgba(23,92,87,.12); border-color:var(--line); }
 .faq-section .accordion-button::after{
