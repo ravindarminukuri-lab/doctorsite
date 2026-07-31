@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment | Dr. Arvind Rao — Consultant Urologist</title>
+<meta name="description" content="Book a consultation with Dr. Arvind Rao, Consultant Urologist and Kidney Transplant Surgeon. New patients, follow-ups and urgent visits welcome.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR (shared) ================= -->
+<div class="topbar d-none d-md-block">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <i class="bi bi-telephone-fill"></i> <a href="tel:+919000000000">+91 90000 00000</a>
+      <span class="divider">|</span>
+      <i class="bi bi-envelope-fill"></i> <a href="mailto:info@drarvindrao.com">info@drarvindrao.com</a>
+      <span class="divider">|</span>
+      <i class="bi bi-clock-fill"></i> Mon – Sat: 9:00 AM – 8:00 PM
+    </div>
+    <div class="d-flex gap-3 align-items-center">
+      <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAVBAR (shared) ================= -->
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      Dr. Arvind Rao
+      <small>Urology &amp; Andrology</small>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Profile</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#diseases" data-bs-toggle="dropdown">Diseases</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="treatments/urinary-tract-stones.html">Urinary Tract Stones</a></li>
+            <li><a class="dropdown-item" href="treatments/prostate-diseases.html">Prostate Diseases</a></li>
+            <li><a class="dropdown-item" href="treatments/chronic-kidney-disease.html">Chronic Kidney Disease</a></li>
+            <li><a class="dropdown-item" href="treatments/urinary-incontinence.html">Urinary Incontinence</a></li>
+            <li><a class="dropdown-item" href="treatments/kidney-transplantation.html">Kidney Transplantation</a></li>
+            <li><a class="dropdown-item" href="index.html#diseases">View all diseases →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#procedures" data-bs-toggle="dropdown">Surgeries</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html#procedures">RIRS</a></li>
+            <li><a class="dropdown-item" href="index.html#procedures">Holmium Laser Lithotripsy</a></li>
+            <li><a class="dropdown-item" href="index.html#procedures">PCNL</a></li>
+            <li><a class="dropdown-item" href="index.html#procedures">TURP</a></li>
+            <li><a class="dropdown-item" href="index.html#procedures">Kidney Transplantation</a></li>
+            <li><a class="dropdown-item" href="index.html#procedures">View all procedures →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a href="appointment.html" class="btn btn-appointment active">Book Appointment</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HEADER / BREADCRUMB ================= -->
+<section class="page-header">
+  <div class="pulse-bg">
+    <svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%;">
+      <path d="M0,100 L250,100 L280,40 L320,160 L360,100 L500,100 L530,60 L560,140 L600,100 L1200,100" stroke="white" stroke-width="1.5" fill="none"/>
+    </svg>
+  </div>
+  <div class="container position-relative wow fadeInUp">
+    <div class="breadcrumb-row">
+      <a href="index.html">Home</a> &nbsp;/&nbsp;
+      <span class="text-white">Book an Appointment</span>
+    </div>
+    <h1>Book an Appointment</h1>
+    <p class="lead-text" style="color:#CFE0DC; max-width:640px;">
+      Tell us a little about your visit and preferred timing — our team will confirm your slot shortly after.
+    </p>
+    <div class="tag-row">
+      <span class="page-tag"><i class="bi bi-person-plus-fill me-1"></i> New &amp; Follow-up Patients</span>
+      <span class="page-tag"><i class="bi bi-camera-video-fill me-1"></i> In-Person &amp; Video Consults</span>
+      <span class="page-tag"><i class="bi bi-lightning-fill me-1"></i> Urgent Visits Prioritised</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="content-section pb-0">
+  <div class="container">
+    <div class="text-center mx-auto mb-5 wow fadeInUp" style="max-width:600px;">
+      <div class="eyebrow justify-content-center">Simple Process</div>
+      <h2 class="section-title">How Booking Works</h2>
+    </div>
+    <div class="row steps-row justify-content-center">
+      <div class="steps-connector d-none d-md-block"></div>
+      <div class="col-6 col-md-3 mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0.05s">
+        <div class="step-card">
+          <div class="step-circle">1</div>
+          <h5>Submit Request</h5>
+          <p>Fill in the form below with your details and preferred date.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4 mb-md-0 wow fadeInUp" data-wow-delay="0.15s">
+        <div class="step-card">
+          <div class="step-circle">2</div>
+          <h5>Get Confirmation</h5>
+          <p>Our team calls or emails to confirm your slot, usually within a few hours.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.25s">
+        <div class="step-card">
+          <div class="step-circle">3</div>
+          <h5>Visit the Clinic</h5>
+          <p>Arrive 10 minutes early with any prior reports or scans you may have.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPOINTMENT FORM + SIDEBAR ================= -->
+<section class="content-section">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- FORM -->
+      <div class="col-lg-7 wow fadeInLeft">
+        <div class="appointment-card">
+          <h3 class="h4 mb-1" style="color:var(--teal-deep);">Appointment Details</h3>
+          <p class="section-sub mb-4">Fields marked * are required.</p>
+          <form class="row g-3 needs-validation" novalidate id="appointmentForm">
+            <div class="col-md-6">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" required>
+              <div class="invalid-feedback">Please enter a phone number.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-control" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Visit Type *</label>
+              <select class="form-select" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>New Patient</option>
+                <option>Follow-up Visit</option>
+                <option>Second Opinion</option>
+                <option>Urgent / Emergency</option>
+              </select>
+              <div class="invalid-feedback">Please select a visit type.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Department / Concern</label>
+              <select class="form-select">
+                <option value="" selected>Not sure / general urology</option>
+                <option>Kidney Stones</option>
+                <option>Prostate Health</option>
+                <option>Kidney Transplant</option>
+                <option>Andrology / Male Fertility</option>
+                <option>Urinary Incontinence</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Preferred Date &amp; Time *</label>
+              <input type="datetime-local" class="form-control" required>
+              <div class="invalid-feedback">Please choose a preferred date and time.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Briefly describe your symptoms or concern, and mention any prior reports you have..."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-appointment w-100 py-2">Submit Request</button>
+            </div>
+          </form>
+          <div id="formSuccess" class="alert alert-success mt-3 d-none">
+            <i class="bi bi-check-circle-fill me-2"></i>Thank you — your appointment request has been received. Our team will confirm shortly.
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.1s">
+        <div class="contact-info-card mb-4">
+          <h3 class="h4 mb-4">Clinic Information</h3>
+          <div class="contact-line">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div><div class="lbl">Address</div>Super Speciality Hospital, Road No. 12,<br>Banjara Hills, Hyderabad – 500034</div>
+          </div>
+          <div class="contact-line">
+            <i class="bi bi-telephone-fill"></i>
+            <div><div class="lbl">Phone</div><a href="tel:+919000000000" class="text-white text-decoration-none">+91 90000 00000</a> (8AM – 8PM)</div>
+          </div>
+          <div class="contact-line">
+            <i class="bi bi-envelope-fill"></i>
+            <div><div class="lbl">Email</div><a href="mailto:info@drarvindrao.com" class="text-white text-decoration-none">info@drarvindrao.com</a></div>
+          </div>
+          <div class="contact-line mb-0">
+            <i class="bi bi-clock-fill"></i>
+            <div><div class="lbl">Hours</div>Monday – Saturday, 9:00 AM – 8:00 PM</div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h5>What to Bring</h5>
+          <ul class="icon-list mb-0">
+            <li><i class="bi bi-check-circle-fill"></i> Any previous test reports, scans or prescriptions</li>
+            <li><i class="bi bi-check-circle-fill"></i> A list of current medications</li>
+            <li><i class="bi bi-check-circle-fill"></i> Photo ID and insurance card, if applicable</li>
+            <li><i class="bi bi-check-circle-fill"></i> A short note of your symptoms and their duration</li>
+          </ul>
+        </div>
+
+        <div class="map-embed mb-4">
+          <iframe src="https://www.google.com/maps?q=Banjara%20Hills%20Hyderabad&output=embed" width="100%" height="220" style="border:0;" loading="lazy"></iframe>
+        </div>
+
+        <div class="info-note">
+          <i class="bi bi-info-circle-fill"></i>
+          <p>Prefer to speak with someone directly? Call the clinic during working hours and our front desk will help you find a slot.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPOINTMENT FAQ ================= -->
+<section class="faq-section bg-mist">
+  <div class="container">
+    <div class="text-center mx-auto mb-5 wow fadeInUp" style="max-width:640px;">
+      <div class="eyebrow justify-content-center">Before You Visit</div>
+      <h2 class="section-title">Appointment FAQs</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="accordion" id="apptFaq">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#af1" aria-expanded="true">
+                Do you accept walk-in patients?
+              </button>
+            </h3>
+            <div id="af1" class="accordion-collapse collapse show" data-bs-parent="#apptFaq">
+              <div class="accordion-body">
+                Walk-ins are accommodated where possible, but booking ahead is recommended to avoid waiting,
+                especially for first-time consultations. Urgent cases are always prioritised regardless of
+                whether an appointment was booked in advance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af2" aria-expanded="false">
+                Do you offer video consultations?
+              </button>
+            </h3>
+            <div id="af2" class="accordion-collapse collapse" data-bs-parent="#apptFaq">
+              <div class="accordion-body">
+                Yes, video consultations are available for follow-up visits and select initial consultations
+                where an in-person examination isn't immediately required. Mention this preference in the
+                message field when booking.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af3" aria-expanded="false">
+                How soon will my appointment be confirmed?
+              </button>
+            </h3>
+            <div id="af3" class="accordion-collapse collapse" data-bs-parent="#apptFaq">
+              <div class="accordion-body">
+                Most requests are confirmed by phone or email within a few working hours. For same-day or
+                urgent requests, calling the clinic directly is the fastest way to secure a slot.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af4" aria-expanded="false">
+                What is your cancellation or rescheduling policy?
+              </button>
+            </h3>
+            <div id="af4" class="accordion-collapse collapse" data-bs-parent="#apptFaq">
+              <div class="accordion-body">
+                You can reschedule or cancel by calling the clinic ahead of your appointment time. Giving as
+                much notice as possible helps free up the slot for another patient.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#af5" aria-expanded="false">
+                Do you accept health insurance?
+              </button>
+            </h3>
+            <div id="af5" class="accordion-collapse collapse" data-bs-parent="#apptFaq">
+              <div class="accordion-body">
+                Several major insurance providers are accepted; bring your insurance card and any pre-authorisation
+                documents to your visit. Contact the front desk beforehand to confirm coverage for your specific plan.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER (shared) ================= -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="foot-brand mb-3">Dr. Arvind Rao</div>
+        <p class="small">Consultant Urologist, Andrologist &amp; Kidney Transplant Surgeon, providing comprehensive urological care in Hyderabad.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-circle"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html#home">Home</a></li>
+          <li class="mb-2"><a href="about.html">Profile</a></li>
+          <li class="mb-2"><a href="index.html#testimonials">Testimonials</a></li>
+          <li class="mb-2"><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h6>Diseases</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="treatments/urinary-tract-stones.html">Urinary Tract Stones</a></li>
+          <li class="mb-2"><a href="treatments/prostate-diseases.html">Prostate Diseases</a></li>
+          <li class="mb-2"><a href="treatments/chronic-kidney-disease.html">Chronic Kidney Disease</a></li>
+          <li class="mb-2"><a href="treatments/kidney-transplantation.html">Kidney Transplantation</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h6>Contact</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Banjara Hills, Hyderabad</li>
+          <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i>+91 90000 00000</li>
+          <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i>info@drarvindrao.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-2">
+      <div>© <span id="year"></span> Dr. Arvind Rao. All rights reserved.</div>
+      <div>Template built for demonstration purposes.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+919000000000" id="callFab" aria-label="Call now"><i class="bi bi-telephone-fill"></i></a>
+<div id="backToTop"><i class="bi bi-arrow-up"></i></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    const btt = document.getElementById('backToTop');
+    if (window.scrollY > 500) btt.classList.add('show'); else btt.classList.remove('show');
+  });
+  document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  const form = document.getElementById('appointmentForm');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!form.checkValidity()) { form.classList.add('was-validated'); return; }
+    document.getElementById('formSuccess').classList.remove('d-none');
+    form.reset();
+    form.classList.remove('was-validated');
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
