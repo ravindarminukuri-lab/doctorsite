@@ -372,7 +372,7 @@
   background:var(--teal-deep); color:var(--teal-soft); box-shadow:none;
 }
 .faq-section .accordion-button:focus{ box-shadow:0 0 0 .2rem rgba(23,92,87,.12); border-color:var(--line); }
-.faq-section .accordion-button::after{
-  filter:invert(28%) sepia(9%) saturate(1200%) hue-rotate(130deg) brightness(90%);
+.faq-section .accordion-button::after {
+    filter: brightness(0) invert(1);
 }
 .faq-section .accordion-body{ color:var(--ink-soft); line-height:1.75; padding:0 1.5rem 1.5rem; }
