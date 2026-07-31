@@ -358,3 +358,21 @@
   .cta-band{ background:linear-gradient(120deg,var(--teal-deep), var(--teal-mid)); color:#fff; padding:3.2rem 0; }
   .cta-band h3{ color:#fff; font-weight:600; margin-bottom:.3rem; }
   .cta-band p{ color:#CFE0DC; margin-bottom:0; }
+  /* ---------- FAQ accordion ---------- */
+.faq-section .accordion-item{
+  background:#fff; border:1px solid var(--line); border-radius:14px !important;
+  overflow:hidden; margin-bottom:1rem;
+}
+.faq-section .accordion-item:last-of-type{ margin-bottom:0; }
+.faq-section .accordion-button{
+  font-family:'Fraunces', serif; font-weight:600; font-size:1.02rem; color:var(--teal-deep);
+  background:#fff; padding:1.2rem 1.5rem; box-shadow:none;
+}
+.faq-section .accordion-button:not(.collapsed){
+  background:var(--teal-soft); color:var(--teal-deep); box-shadow:none;
+}
+.faq-section .accordion-button:focus{ box-shadow:0 0 0 .2rem rgba(23,92,87,.12); border-color:var(--line); }
+.faq-section .accordion-button::after{
+  filter:invert(28%) sepia(9%) saturate(1200%) hue-rotate(130deg) brightness(90%);
+}
+.faq-section .accordion-body{ color:var(--ink-soft); line-height:1.75; padding:0 1.5rem 1.5rem; }
