@@ -64,7 +64,7 @@ The header and footer show the icon mark **only** — no adjacent "Dr. Shashank 
 - Mobile menu renders as a solid, self-contained white card below the header (no more content bleeding through behind it), with the header itself going solid while the menu is open
 - **Sticky social icon bar** (WhatsApp, Instagram, Facebook) fixed on the right edge on every page — WhatsApp opens a chat pre-filled with a booking message; Instagram/Facebook are placeholder links (see below)
 - **Dedicated Book Appointment page** (`book-appointment.html`) — real instant-booking link to the Sindhu Hospitals system, plus a callback-request form; the header's "Book Appointment" button and all on-page CTAs now point here
-- **Treatments are uro-oncology-focused**: Robotic Surgery, Kidney Cancer, Bladder Cancer, Prostate Cancer, Penile Cancer, Testicular Cancer, Ureteral Cancer (UTUC), and Second Opinions — replacing the earlier general-urology list, in line with Dr. Agrawal's actual specialty. Each of the 8 treatment pages includes approach-highlight cards, a signs/diagnosis/options breakdown, a Recovery & Outlook section, a "Why Choose Dr. Agrawal" list, 3 FAQs, and a doctor snippet + related-treatments sidebar.
+- **Treatments are uro-oncology-focused**: Robotic Surgery, Kidney Cancer, Bladder Cancer, Prostate Cancer, Penile Cancer, Testicular Cancer, Ureteral Cancer (UTUC), and Second Opinions — replacing the earlier general-urology list, in line with Dr. Shashank Agrawal's actual specialty. Each of the 8 treatment pages includes approach-highlight cards, a signs/diagnosis/options breakdown, a Recovery & Outlook section, a "Why Choose Dr. Shashank Agrawal" list, 3 FAQs, and a doctor snippet + related-treatments sidebar.
 - Scroll-reveal animations via `IntersectionObserver`, animated stat counters, filling patient-journey timeline, back-to-top button — all respecting `prefers-reduced-motion`
 - FAQ accordions on the Home, Treatments, and every individual treatment page
 - Bootstrap client-side form validation on both appointment forms, with a friendly success message on submit (no backend wired up)
@@ -77,7 +77,7 @@ The header and footer show the icon mark **only** — no adjacent "Dr. Shashank 
 3. **Wire up both appointment forms** (`contact.html` and `book-appointment.html`) to a real backend, booking system, or email service — they currently only validate client-side.
 4. **Verify all clinic facts** (address, phone, email, hours, credentials, bio) against the official source before publishing — these were sourced from the doctor's public hospital profile page but should be re-confirmed.
 5. **Update the canonical/OG URLs** in each page's `<head>` to your real domain.
-6. **Testimonials are paraphrased from two real Google reviews** for Dr. Agrawal (full names shortened to first name + last initial for privacy) — copyright rules mean the on-page text is a paraphrase rather than a verbatim quote. Add more as new reviews come in, and link out to the real Google listing if you'd like visitors to read them in full.
+6. **Testimonials are paraphrased from two real Google reviews** for Dr. Shashank Agrawal (full names shortened to first name + last initial for privacy) — copyright rules mean the on-page text is a paraphrase rather than a verbatim quote. Add more as new reviews come in, and link out to the real Google listing if you'd like visitors to read them in full.
 7. **Add Google Analytics / Search Console**, a real `robots.txt` and `sitemap.xml` once the domain is live.
 
 ## Browser support
