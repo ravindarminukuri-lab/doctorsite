@@ -211,7 +211,7 @@ img { max-width: 100%; height: auto; }
 
 .brand-mark { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-mark .monogram-img {
-  width: 200px; 
+  width: 60px; height: 60px;
   object-fit: contain;
   flex-shrink: 0;
   transition: transform var(--transition-base);
@@ -901,6 +901,102 @@ img { max-width: 100%; height: auto; }
   padding: 6px 24px 22px;
   color: var(--color-muted);
   font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Treatment detail page — rich sections (booking help, info blocks)
+   ========================================================================== */
+.eyebrow-label {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  display: block;
+  margin-bottom: 10px;
+}
+.info-block {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 22px;
+  margin-bottom: 38px;
+}
+.info-block:last-child { margin-bottom: 0; }
+.info-block h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.info-block p { margin-bottom: 12px; }
+
+.trust-mini-row { text-align: center; }
+.trust-mini-row .icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+  font-size: 1.3rem;
+}
+.trust-mini-row h4 { font-size: 0.98rem; margin-bottom: 6px; }
+.trust-mini-row p { font-size: 0.85rem; margin-bottom: 0; }
+
+.booking-help-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+@media (max-width: 575.98px) { .booking-help-card { padding: 26px 20px; } }
+
+/* Redesigned "Take the Next Step" split layout */
+.booking-split-left {
+  background: var(--gradient-brand);
+  border-radius: var(--radius-lg);
+  padding: 44px 40px;
+  color: var(--color-white);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.booking-split-left::after {
+  content: "";
+  position: absolute;
+  width: 260px; height: 260px;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 50%;
+  right: -90px; bottom: -110px;
+}
+.booking-split-left .eyebrow-label { color: rgba(255,255,255,0.85); }
+.booking-split-left h2 { color: var(--color-white); font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-bottom: 12px; }
+.booking-split-left > p { color: rgba(255,255,255,0.88); margin-bottom: 32px; max-width: 480px; }
+.booking-feature-list { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 22px; }
+.booking-feature-item { display: flex; align-items: flex-start; gap: 16px; }
+.booking-feature-item .icon {
+  width: 48px; height: 48px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.16);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+.booking-feature-item h4 { color: var(--color-white); font-size: 1rem; margin-bottom: 4px; }
+.booking-feature-item p { color: rgba(255,255,255,0.82); font-size: 0.88rem; margin-bottom: 0; }
+
+.booking-split-right { height: 100%; }
+.booking-form-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  padding: 40px;
+  position: relative;
+  height: 100%;
+}
+@media (max-width: 575.98px) { .booking-form-card { padding: 28px 22px; } }
+.booking-form-card .form-badge {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
 }
 
 /* Simple pages content (treatment/blog detail) */

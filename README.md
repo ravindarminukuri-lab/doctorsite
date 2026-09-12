@@ -53,7 +53,7 @@ Primary and secondary are sampled directly from the real logo (`assets/images/lo
 ## Logo
 
 - `assets/images/logo-full.png` — full lockup (icon + name + tagline), extracted from the provided logo sheet
-- `assets/images/logo-full.png` / `logo-icon-512.png` — icon mark only (no text), genuinely transparent
+- `assets/images/logo-icon-100.png` / `logo-icon-512.png` — icon mark only (no text), genuinely transparent
 - `favicon.ico` — multi-resolution (16/32/48/64px) favicon generated from the icon mark
 
 The header and footer show the icon mark **only** — no adjacent "Dr. Shashank Agrawal" text label, per request. The doctor's name still appears in page titles, the hero, and the About page.
@@ -64,7 +64,7 @@ The header and footer show the icon mark **only** — no adjacent "Dr. Shashank 
 - Mobile menu renders as a solid, self-contained white card below the header (no more content bleeding through behind it), with the header itself going solid while the menu is open
 - **Sticky social icon bar** (WhatsApp, Instagram, Facebook) fixed on the right edge on every page — WhatsApp opens a chat pre-filled with a booking message; Instagram/Facebook are placeholder links (see below)
 - **Dedicated Book Appointment page** (`book-appointment.html`) — real instant-booking link to the Sindhu Hospitals system, plus a callback-request form; the header's "Book Appointment" button and all on-page CTAs now point here
-- **Treatments are uro-oncology-focused**: Robotic Surgery, Kidney Cancer, Bladder Cancer, Prostate Cancer, Penile Cancer, Testicular Cancer, Ureteral Cancer (UTUC), and Second Opinions — replacing the earlier general-urology list, in line with Dr. Shashank Agrawal's actual specialty. Each of the 8 treatment pages includes approach-highlight cards, a signs/diagnosis/options breakdown, a Recovery & Outlook section, a "Why Choose Dr. Shashank Agrawal" list, 3 FAQs, and a doctor snippet + related-treatments sidebar.
+- **Treatments are uro-oncology-focused**: Robotic Surgery, Kidney Cancer, Bladder Cancer, Prostate Cancer, Penile Cancer, Testicular Cancer, Ureteral Cancer (UTUC), and Second Opinions — replacing the earlier general-urology list, in line with Dr. Agrawal's actual specialty. Each of the 8 treatment pages includes approach-highlight cards, a signs/diagnosis/options breakdown, a Recovery & Outlook section, a "Why Choose Dr. Agrawal" list, 3 FAQs, and a doctor snippet + related-treatments sidebar.
 - Scroll-reveal animations via `IntersectionObserver`, animated stat counters, filling patient-journey timeline, back-to-top button — all respecting `prefers-reduced-motion`
 - FAQ accordions on the Home, Treatments, and every individual treatment page
 - Bootstrap client-side form validation on both appointment forms, with a friendly success message on submit (no backend wired up)
@@ -77,8 +77,10 @@ The header and footer show the icon mark **only** — no adjacent "Dr. Shashank 
 3. **Wire up both appointment forms** (`contact.html` and `book-appointment.html`) to a real backend, booking system, or email service — they currently only validate client-side.
 4. **Verify all clinic facts** (address, phone, email, hours, credentials, bio) against the official source before publishing — these were sourced from the doctor's public hospital profile page but should be re-confirmed.
 5. **Update the canonical/OG URLs** in each page's `<head>` to your real domain.
-6. **Testimonials are paraphrased from two real Google reviews** for Dr. Shashank Agrawal (full names shortened to first name + last initial for privacy) — copyright rules mean the on-page text is a paraphrase rather than a verbatim quote. Add more as new reviews come in, and link out to the real Google listing if you'd like visitors to read them in full.
-7. **Add Google Analytics / Search Console**, a real `robots.txt` and `sitemap.xml` once the domain is live.
+6. **Testimonials are paraphrased from two real Google reviews** for Dr. Agrawal (full names shortened to first name + last initial for privacy) — copyright rules mean the on-page text is a paraphrase rather than a verbatim quote. Add more as new reviews come in, and link out to the real Google listing if you'd like visitors to read them in full.
+7. **Each treatment page has a "sample patient feedback" quote** in the Advanced Treatment section — these are clearly labeled as placeholders (dashed border, explicit caption) so the doctor can see how a testimonial slot looks on the page. Replace with a real, verified quote per treatment before launch, or remove the block if you'd rather not show one until you have one.
+8. **Every treatment page's Advanced Treatment section image** is a text-labeled placeholder (e.g. "Kidney Cancer Treatment") rather than a stock photo — swap in a real procedure, technology, or facility photo for each treatment.
+9. **Add Google Analytics / Search Console**, a real `robots.txt` and `sitemap.xml` once the domain is live.
 
 ## Browser support
 
